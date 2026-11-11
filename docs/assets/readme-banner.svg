@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">LifeSmart devices, connected to Home Assistant</title>
+  <desc id="desc">Choose Cloud or LocalWeb to connect your smart home devices, scenes and automations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101f36"/><stop offset="1" stop-color="#113b45"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65e0db"/><stop offset="1" stop-color="#5e9cef"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#3bd5cb" stop-opacity=".15"/><stop offset="1" stop-color="#3bd5cb" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#8fb9ca" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="320" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="22" fill="url(#dots)"/>
+  <ellipse cx="880" cy="160" rx="340" ry="240" fill="url(#glow)"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="48" y="47" width="43" height="4" rx="2" fill="#65e0db"/>
+    <text x="48" y="84" fill="#90b6c4" font-size="14" font-weight="600" letter-spacing="2.5">LIFESMART BY ULROOT</text>
+    <text x="45" y="146" fill="#ffffff" font-size="44" font-weight="700">Cloud + LocalWeb</text>
+    <text x="48" y="187" fill="#b8d1db" font-size="20">Your devices, together in Home Assistant.</text>
+    <g font-size="14" fill="#c7e1e8">
+      <rect x="48" y="225" width="99" height="34" rx="17" fill="#244652"/><text x="97" y="247" text-anchor="middle">Devices</text>
+      <rect x="157" y="225" width="91" height="34" rx="17" fill="#244652"/><text x="202" y="247" text-anchor="middle">Scenes</text>
+      <rect x="258" y="225" width="129" height="34" rx="17" fill="#244652"/><text x="322" y="247" text-anchor="middle">Automations</text>
+    </g>
+    <g fill="none" stroke="#69b9ca" stroke-width="2" opacity=".7">
+      <path d="M715 90H754Q774 90 774 110V139H816"/>
+      <path d="M715 230H754Q774 230 774 210V181H816"/>
+      <path d="M934 160H977Q991 160 991 146V88H1030"/>
+      <path d="M934 160H1030"/>
+      <path d="M934 160H977Q991 160 991 174V232H1030"/>
+    </g>
+    <g>
+      <rect x="584" y="49" width="132" height="82" rx="16" fill="#183444" stroke="#3a6677"/>
+      <path d="M622 91H654a10 10 0 0 0 0-20 17 17 0 0 0-32-3 12 12 0 0 0 0 23Z" transform="translate(6 -2)" fill="none" stroke="#86dbe8" stroke-width="2.5"/>
+      <text x="650" y="117" fill="#e0eff5" font-size="14" text-anchor="middle">Cloud</text>
+      <rect x="584" y="189" width="132" height="82" rx="16" fill="#183e47" stroke="#3a777d"/>
+      <g fill="none" stroke="#79ded2" stroke-width="2.5" stroke-linecap="round"><rect x="630" y="224" width="40" height="15" rx="4"/><path d="M638 218a18 18 0 0 1 24 0M644 212a10 10 0 0 1 12 0"/><path d="M639 232h2m6 0h2"/></g>
+      <text x="650" y="257" fill="#e0f4f0" font-size="14" text-anchor="middle">LocalWeb</text>
+    </g>
+    <rect x="804" y="82" width="140" height="156" rx="26" fill="#4ad4c7" opacity=".06"/>
+    <rect x="815" y="93" width="118" height="134" rx="22" fill="#153744" stroke="url(#accent)" stroke-width="2"/>
+    <g stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M844 153l30-26 30 26v33h-60Z"/><path d="M867 186v-24h14v24"/><path d="M892 140v-12"/></g>
+    <text x="874" y="211" fill="#e1f7f5" font-size="12" font-weight="600" text-anchor="middle">HOME ASSISTANT</text>
+    <g stroke="#82c8d6" fill="#193c49" stroke-width="1.5"><rect x="1030" y="60" width="94" height="56" rx="15"/><rect x="1030" y="132" width="94" height="56" rx="15"/><rect x="1030" y="204" width="94" height="56" rx="15"/></g>
+    <g fill="none" stroke="#c5edf0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1070 94v-4a12 12 0 1 1 14 0v4m-13 4h12m-10 5h8"/>
+      <rect x="1063" y="145" width="28" height="29" rx="7"/><circle cx="1077" cy="159" r="6"/><path d="M1077 153v6l3 3"/>
+      <path d="M1060 218h34m-32 0v28h13v-28m17 0v28h-13v-28m-13 3v20m23-20v20"/>
+    </g>
+    <circle cx="774" cy="139" r="4" fill="#83d9e6"/><circle cx="774" cy="181" r="4" fill="#6cdecf"/>
+  </g>
+</svg>

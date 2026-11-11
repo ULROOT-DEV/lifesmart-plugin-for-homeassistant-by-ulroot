@@ -1,0 +1,140 @@
+ULROOT Source-Available License 1.0
+License identifier: LicenseRef-ULROOT-Source-Available-1.0
+
+Copyright (c) 2026 ULROOT. All rights reserved except as expressly granted below.
+
+1. Scope and definitions
+
+"Licensor" means the copyright holder identified as ULROOT in this notice.
+"You" means the individual or legal entity exercising rights under this license.
+"Software" means the ULROOT-owned code and accompanying documentation expressly
+distributed with this license, including copies and modifications of that code
+or documentation. A "Modified Version" includes adaptations, translations,
+ports, and works incorporating a substantial portion of the Software, to the
+extent they are derivative works or copies under applicable copyright law.
+
+This license does not cover third-party software or materials identified as
+separately licensed, including dependencies, logos, and product artwork. Their
+own terms and notices continue to apply. No ownership of third-party material,
+trademark rights, or patent license is granted. The restrictions below do not
+apply to independently developed software that does not copy or derive from the
+Software, or restrict rights that applicable law does not permit limiting.
+
+2. Permissions
+
+Subject to this license, Licensor grants You a worldwide, non-exclusive,
+royalty-free copyright license to:
+
+(a) access, inspect, download, copy, install, and run the Software for personal
+    use or Your organization's internal business operations;
+(b) modify the Software for those purposes; and
+(c) distribute the Software or Modified Versions without charge, in source or
+    executable form, subject to sections 3 and 4.
+
+Internal business use includes operating Your own home, office, shop, or other
+facilities. It does not include selling or providing the Software or its
+functionality to third parties as a paid product or service. Commercial activity
+unrelated to supplying the Software is not prohibited merely because You use
+the Software internally.
+
+3. Conditions for copies and Modified Versions
+
+For every copy or substantial portion You distribute:
+
+(a) include this entire license and retain applicable copyright, attribution,
+    and third-party notices;
+(b) identify modifications, their author, and their date in accompanying notices;
+(c) license the covered Software and Your modifications under this same license,
+    without granting recipients rights to sell or commercially provide them;
+(d) do not impose a charge or additional restriction on recipients' exercise of
+    the rights granted here; and
+(e) do not represent a Modified Version as an official ULROOT release or imply
+    ULROOT's sponsorship, certification, or endorsement without written consent.
+
+You retain copyright in Your original contributions. Compliance with this
+section does not grant ownership of them to Licensor. Free public forks, mirrors,
+and community contributions are permitted subject to these conditions. Normal
+repository-hosting and download services are not prohibited merely because the
+hosting provider has a commercial business model, provided recipients are not
+charged specifically to obtain or use the Software.
+
+4. Activities requiring separate written permission
+
+Without Licensor's prior written permission, You may not, directly or indirectly:
+
+(a) sell, rent, commercially license, or charge for a copy, download, installation
+    entitlement, activation, feature, update, access to, or use of the Software
+    or a Modified Version;
+(b) provide the Software or a Modified Version, or its functionality, to third
+    parties through a paid subscription, hosted service, or managed service;
+(c) distribute the Software or a Modified Version as part of a product, hardware
+    device, software package, appliance, or other bundle supplied for payment or
+    other commercial consideration, even if the Software has no separate price;
+    or
+(d) avoid these restrictions by renaming or rebranding the Software, changing its
+    packaging or implementation language, calling the price a donation or service
+    fee, or charging through an intermediary.
+
+An optional donation that is not required for access, features, updates, use, or
+distribution rights is not a charge under this section.
+
+5. Paid installation and maintenance exception
+
+You may charge for installation, configuration, training, and maintenance labor
+performed for a customer using the Software for a purpose permitted by section 2.
+This exception applies only if:
+
+(a) the charge is for the labor, not a Software license, copy, feature, update,
+    access entitlement, or right to use a Modified Version;
+(b) You clearly disclose that the Software is provided without charge under this
+    license and provide the customer with a copy of this license;
+(c) the customer can obtain and use the supplied Software or Modified Version
+    without buying Your services, and continued use does not require payment;
+    and
+(d) the arrangement is not a paid hosted/managed service or a hardware/product
+    bundle prohibited by section 4.
+
+Calling a Software sale "installation" or "maintenance" does not qualify for
+this exception. No exception authorizes removing or concealing license notices.
+
+6. Commercial permissions and other licenses
+
+Requests for commercial distribution, paid services, product bundling, or other
+exceptions must be sent to ss.kim@ulroot.com. Permission must be expressly granted
+in writing by Licensor; sending a request, making a donation, receiving technical
+support, or obtaining LocalWeb station activation does not itself grant permission.
+Licensor may offer separate commercial terms. Such terms apply only to the
+parties and activities they expressly cover.
+
+This license applies to copies expressly offered under it. It does not revoke
+rights already granted in copies lawfully received under an earlier license.
+It does not replace licenses governing third-party code or dependencies.
+
+7. Termination
+
+Your rights under this license terminate automatically if You violate its terms.
+You must stop the unpermitted activity. For a first violation, rights are
+automatically reinstated if You fully cure it within 30 days after first becoming
+aware of it or receiving notice, whichever occurs first. Otherwise reinstatement
+requires Licensor's written permission. Termination does not terminate the rights
+of downstream recipients who independently comply with this license, and does
+not waive claims arising from a violation.
+
+8. No warranty; limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+TO THE SAME EXTENT, LICENSOR AND CONTRIBUTORS ARE NOT LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE SOFTWARE OR
+ITS USE, WHETHER IN CONTRACT, TORT, OR OTHERWISE. NOTHING HERE EXCLUDES LIABILITY
+THAT APPLICABLE LAW DOES NOT ALLOW TO BE EXCLUDED.
+
+9. Interpretation
+
+This is a source-available license with commercial redistribution restrictions;
+it is not the MIT License and is not an OSI-approved open-source license.
+This English text is authoritative. Translations and README summaries are
+provided for convenience and do not expand or replace these terms. If a provision
+is unenforceable, the remaining provisions continue to apply to the extent
+permitted by law. Rights not expressly granted are reserved by their holders.

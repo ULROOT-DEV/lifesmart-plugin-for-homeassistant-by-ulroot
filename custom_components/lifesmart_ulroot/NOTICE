@@ -1,0 +1,27 @@
+LifeSmart by ULROOT
+Copyright (c) 2026 ULROOT
+
+ULROOT-owned code is licensed under the ULROOT Source-Available License 1.0.
+The complete terms are in the LICENSE file in this directory. Personal and
+internal business use, modification, and free redistribution are permitted
+subject to those terms. Selling copies or Modified Versions, paid hosted or
+managed services, and commercial product bundling require separate written
+permission from ss.kim@ulroot.com. The limited paid-labor exception in LICENSE
+does not permit charging for software rights or features.
+
+LocalWeb activation is not permission to commercially redistribute the Software.
+
+Third-party materials
+
+Home Assistant and its runtime dependencies are separate projects and remain
+under their respective licenses. This distribution does not relicense them.
+
+brand/icon.png was copied from RootONLocal apps/common/public/logo.png at the
+project owner's request. Product artwork and trademarks retain their original
+ownership; the code license grants no general artwork or trademark reuse rights.
+Source distributions include docs/ASSETS.md with additional artwork provenance.
+
+Protocol behavior was studied in RootON projects and LifeSmart manuals. The
+iKaew/hass-lifesmart-addon and MapleEve/lifesmart-for-homeassistant integrations
+were structural references; their source files were not copied into this project.
+Those projects are not covered by this license and do not endorse this project.

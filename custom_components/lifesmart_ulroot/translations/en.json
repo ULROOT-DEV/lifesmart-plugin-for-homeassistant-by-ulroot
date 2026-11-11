@@ -1,0 +1,297 @@
+{
+  "title": "LifeSmart by ULROOT",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect LifeSmart",
+        "description": "Connect a Cloud account or a LocalWeb station.",
+        "menu_options": {
+          "cloud": "LifeSmart Cloud",
+          "localweb": "LocalWeb (activated station)"
+        }
+      },
+      "cloud": {
+        "title": "Cloud authentication",
+        "menu_options": {
+          "cloud_login": "Email / login ID and app password",
+          "cloud_token": "Enter UserToken directly"
+        }
+      },
+      "cloud_login": {
+        "title": "LifeSmart Cloud login",
+        "description": "Enter your LifeSmart login ID and app password. Email example: user@example.com. A numeric UserNo is also accepted. Import supported devices from all accessible stations. The password is not saved. UserToken renewal is always enabled for account login. Stations already connected through LocalWeb are excluded.",
+        "data": {
+          "server": "API server",
+          "appkey": "App Key",
+          "apptoken": "App Token",
+          "userid": "LifeSmart login ID",
+          "password": "LifeSmart app password"
+        },
+        "data_description": {
+          "userid": "Enter the email you use to sign in to LifeSmart. Example: user@example.com. A numeric UserNo is also accepted."
+        }
+      },
+      "cloud_token": {
+        "title": "Use an existing UserToken",
+        "description": "Enter your numeric UserNo (for example 8123456), UserToken and application credentials. Import supported devices from all accessible stations. Leave renewal off if another app manages the token; replace it when expired. Stations already connected through LocalWeb are excluded.",
+        "data": {
+          "server": "API server",
+          "appkey": "App Key",
+          "apptoken": "App Token",
+          "userid": "LifeSmart UserNo",
+          "usertoken": "UserToken",
+          "auto_refresh": "Automatically renew UserToken"
+        },
+        "data_description": {
+          "userid": "Enter your numeric UserNo, not an email address. Example: 8123456. Find it in your LifeSmart app account information."
+        }
+      },
+      "reauth_token": {
+        "title": "Replace your LifeSmart UserToken",
+        "description": "The saved UserToken is no longer accepted. It may have expired or been replaced by another application. Enter a valid token below. Your automatic-renewal setting is preserved: OFF uses the supplied token unchanged; ON renews it during verification to obtain its expiry. Existing devices and entities are preserved. Use Reconfigure if the account, application credentials, server or renewal setting must change.",
+        "data": {
+          "usertoken": "Latest UserToken"
+        }
+      },
+      "localweb": {
+        "title": "Connect through LocalWeb",
+        "description": "LocalWeb activation is required for each station. To request activation, email your LifeSmart account userno and app password (app pw) to {email}. Enter this station's IP/hostname and LocalWeb login credentials below; these are separate from the LifeSmart account details used for activation. Choose HTTP (8008) or HTTPS (8080); the port is set automatically. Add more stations by repeating Add entry → LocalWeb.",
+        "data": {
+          "host": "Station IP address or hostname",
+          "protocol": "Connection method",
+          "username": "LocalWeb login ID",
+          "password": "LocalWeb password"
+        }
+      },
+      "localweb_tls": {
+        "title": "HTTPS certificate verification",
+        "description": "Certificate verification checks that the station's HTTPS certificate is trusted and matches its address. Leave this enabled for a trusted, matching certificate. If your activated station uses a self-signed certificate or a certificate that does not match its IP, you can disable verification for this station. HTTPS traffic stays encrypted, but the server's identity is no longer verified. This option is not used with HTTP.",
+        "data": {
+          "verify_ssl": "Verify the station's HTTPS certificate"
+        }
+      }
+    },
+    "error": {
+      "invalid_usertoken": "This UserToken was not accepted. Enter the latest token issued for the same account and application. Use Reconfigure if those credentials changed.",
+      "invalid_auth": "Authentication failed. Check the API region and credentials. An expired token may need replacement.",
+      "cannot_connect": "Cannot connect. Check the address, port and network. For LocalWeb, also confirm activation. For support, contact ss.kim@ulroot.com.",
+      "missing_identity": "The station did not return an identifier. On firmware without a station identity response, connect at least one device before setup.",
+      "identity_mismatch": "These credentials do not match the existing Cloud account or LocalWeb station.",
+      "invalid_response": "The server returned an unsupported response. Check the endpoint and firmware. For support, contact ss.kim@ulroot.com.",
+      "api_error": "LifeSmart rejected the request. Check permissions and try again later. For support, contact ss.kim@ulroot.com.",
+      "invalid_userno": "Enter a numeric UserNo, not an email address. Example: 8123456."
+    },
+    "abort": {
+      "already_configured": "This Cloud account or station is already configured. Update the existing setup. Before adding a station through LocalWeb, exclude it in the Cloud options.",
+      "no_stations": "No accessible Smart Stations were found for this account.",
+      "identity_mismatch": "These credentials do not match the existing Cloud account or LocalWeb station.",
+      "reauth_successful": "Authentication updated.",
+      "reconfigure_successful": "Connection updated. Existing entity identities are preserved."
+    }
+  },
+  "exceptions": {
+    "invalid_usertoken": {
+      "message": "The saved LifeSmart UserToken is no longer accepted. It may have expired or been replaced elsewhere. Open LifeSmart by ULROOT under Settings → Devices & services and reauthenticate with a valid UserToken. Disabled automatic renewal never changes the supplied token; already expired tokens cannot be renewed."
+    },
+    "invalid_auth": {
+      "message": "LifeSmart credentials are no longer accepted. Open LifeSmart by ULROOT under Settings → Devices & services and complete reauthentication."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "LifeSmart options",
+        "description": "Push updates are used when available. The interval below is used when push is disconnected; a full recovery snapshot is taken every five minutes while push is connected. Cloud automatically discovers all stations. Exclude stations here to limit the account scope. Stations connected through LocalWeb are not managed twice.",
+        "data": {
+          "poll_interval": "Fallback polling interval (seconds)",
+          "enable_push": "Use real-time updates",
+          "excluded_devices": "Exclude devices",
+          "excluded_stations": "Exclude stations (Cloud)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature": {
+        "name": "Temperature"
+      },
+      "humidity": {
+        "name": "Humidity"
+      },
+      "illuminance": {
+        "name": "Illuminance"
+      },
+      "pm25": {
+        "name": "PM2.5"
+      },
+      "pm10": {
+        "name": "PM10"
+      },
+      "carbon_dioxide": {
+        "name": "Carbon dioxide"
+      },
+      "energy": {
+        "name": "Energy {channel}"
+      },
+      "power": {
+        "name": "Power {channel}"
+      },
+      "power_factor": {
+        "name": "Power factor {channel}"
+      },
+      "frequency": {
+        "name": "Frequency {channel}"
+      },
+      "current": {
+        "name": "Current {channel}"
+      },
+      "voltage": {
+        "name": "Voltage {channel}"
+      },
+      "measurement": {
+        "name": "Measurement"
+      },
+      "formaldehyde": {
+        "name": "Formaldehyde"
+      },
+      "oxygen": {
+        "name": "Oxygen"
+      },
+      "ammonia": {
+        "name": "Ammonia"
+      },
+      "hydrogen_sulfide": {
+        "name": "Hydrogen sulfide"
+      },
+      "voc": {
+        "name": "Volatile organic compounds"
+      },
+      "voc_ppm": {
+        "name": "Volatile organic compounds"
+      },
+      "noise": {
+        "name": "Noise"
+      },
+      "smoke_concentration": {
+        "name": "Smoke concentration"
+      },
+      "carbon_monoxide": {
+        "name": "Carbon monoxide"
+      },
+      "battery": {
+        "name": "Battery"
+      },
+      "gas_concentration": {
+        "name": "Gas concentration"
+      },
+      "button_event": {
+        "name": "Button action"
+      },
+      "pm1": {
+        "name": "PM1.0"
+      },
+      "camera_status": {
+        "name": "Camera status"
+      },
+      "filter_life": {
+        "name": "Filter life"
+      },
+      "uv_index": {
+        "name": "UV index"
+      },
+      "floor_temperature": {
+        "name": "Floor temperature"
+      },
+      "operating_mode": {
+        "name": "Operating mode"
+      }
+    },
+    "binary_sensor": {
+      "motion": {
+        "name": "Motion"
+      },
+      "occupancy": {
+        "name": "Occupancy"
+      },
+      "door": {
+        "name": "Door"
+      },
+      "moisture": {
+        "name": "Water leak"
+      },
+      "smoke": {
+        "name": "Smoke"
+      },
+      "battery_low": {
+        "name": "Low battery"
+      },
+      "input": {
+        "name": "Input {channel}"
+      },
+      "button_pressed": {
+        "name": "Button {channel}"
+      },
+      "vibration": {
+        "name": "Vibration"
+      },
+      "charging": {
+        "name": "Charging"
+      },
+      "alarm": {
+        "name": "Alarm"
+      },
+      "tamper": {
+        "name": "Tamper"
+      },
+      "external_contact": {
+        "name": "External contact"
+      },
+      "doorbell": {
+        "name": "Doorbell"
+      },
+      "gas": {
+        "name": "Gas"
+      },
+      "connectivity": {
+        "name": "Connection"
+      }
+    },
+    "switch": {
+      "channel": {
+        "name": "Channel {channel}"
+      }
+    },
+    "light": {
+      "light": {
+        "name": "Light"
+      }
+    },
+    "cover": {
+      "cover": {
+        "name": "Curtain"
+      }
+    },
+    "climate": {
+      "climate": {
+        "name": "Climate"
+      }
+    },
+    "siren": {
+      "siren": {
+        "name": "Siren"
+      }
+    },
+    "fan": {
+      "fan": {
+        "name": "Fan"
+      },
+      "supply_fan": {
+        "name": "Supply fan"
+      },
+      "exhaust_fan": {
+        "name": "Exhaust fan"
+      }
+    }
+  }
+}

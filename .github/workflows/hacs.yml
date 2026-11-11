@@ -1,0 +1,17 @@
+name: HACS catalog review (manual)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hacs:
+    # Catalog review requires an OSI-approved license. Our custom license is
+    # intentional, so run this check explicitly when preparing a submission.
+    # Keep real failures visible; do not ignore license validation errors.
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hacs/action@main
+        with:
+          category: integration

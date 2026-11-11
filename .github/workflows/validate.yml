@@ -1,0 +1,14 @@
+name: Integration validation
+on:
+  push:
+  pull_request:
+  public:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hassfest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: home-assistant/actions/hassfest@master

@@ -1,0 +1,14 @@
+{
+  "domain": "lifesmart_ulroot",
+  "name": "LifeSmart by ULROOT",
+  "codeowners": [
+    "@Kcobstkin"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/ULROOT-DEV/lifesmart-plugin-for-homeassistant-by-ulroot",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/ULROOT-DEV/lifesmart-plugin-for-homeassistant-by-ulroot/issues",
+  "requirements": [],
+  "version": "0.3.2"
+}

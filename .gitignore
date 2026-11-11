@@ -1,0 +1,18 @@
+# Local credentials and machine-specific evidence must never be published.
+intent/
+/CHANGELOG.md
+.env
+.env.*
+!.env.example
+local_secret*
+local-secret*/
+local_secrets*/
+.local/
+*.log
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+dist/
+build/
+*.egg-info/
